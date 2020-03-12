@@ -1,11 +1,7 @@
-﻿using FProjectEtea1.Interfaces;
+﻿using ITEAProject11032020.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace FProjectEtea1.Classes
+namespace ITEAProject11032020.Classes
 {
     /// <summary>
     /// Запретить наследование
@@ -25,28 +21,19 @@ namespace FProjectEtea1.Classes
         /// </summary>
         public string Comment { get; set; }
 
+        private int field1 = 0;
         /// <summary>
-        /// Поле 1
+        /// Поле 1 (get)
         /// </summary>
-        string field1;
-        /// <summary>
-        /// Свойство Поля 1 (get, set)
-        /// </summary>
-        public string Field1
-        {
-            set { this.field1 = value; }
-        }
+        public int Field1 { get { return field1; } }
 
+        private int field2;
         /// <summary>
-        /// Поле 2
+        /// Поле 2 (get/set)
         /// </summary>
-        string field2;
-        /// <summary>
-        /// Свойство Поля 2 (get)
-        /// </summary>
-        public string Field2
-        {
-            get { return this.field2; }
+        public int Field2 {
+            get { return field2; }
+            private set { field2 = value; }
         }
 
         /// <summary>
@@ -73,7 +60,7 @@ namespace FProjectEtea1.Classes
         }
 
         /// <summary>
-        /// метод не возвращает значение
+        /// метод в параметрами невозвращающий значение
         /// </summary>
         /// <param name="value"></param>
         public void AddCountValue(int value)
@@ -144,6 +131,11 @@ namespace FProjectEtea1.Classes
         public override bool Equals(object obj)
         {
             return this.Cipher.Equals(((Temp)obj).Cipher, StringComparison.OrdinalIgnoreCase);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         #endregion

@@ -1,4 +1,4 @@
-﻿namespace EteaProject11032020
+﻿namespace ITEAProject11032020
 {
     partial class Form1
     {

@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EteaProject11032020
+namespace ITEAProject11032020
 {
     static class Program
     {

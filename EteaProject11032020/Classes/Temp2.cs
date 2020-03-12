@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FProjectEtea1.Classes
+﻿namespace ITEAProject11032020.Classes
 {
     /// <summary>
     /// Абстрактный класс с абстрактным и виртуальным методом

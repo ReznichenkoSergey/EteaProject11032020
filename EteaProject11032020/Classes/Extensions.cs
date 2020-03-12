@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FProjectEtea1.Classes
+﻿namespace ITEAProject11032020.Classes
 {
     /// <summary>
     /// 12. Создайте класс Extensions, в него добавьте extension метод для вашего изначального класса

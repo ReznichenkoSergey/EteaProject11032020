@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FProjectEtea1.Interfaces
+namespace ITEAProject11032020.Interfaces
 {
     interface ITemp
     {

@@ -1,5 +1,5 @@
-﻿using FProjectEtea1.Classes;
-using FProjectEtea1.Interfaces;
+﻿using ITEAProject11032020.Classes;
+using ITEAProject11032020.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EteaProject11032020
+namespace ITEAProject11032020
 {
     public partial class Form1 : Form
     {
@@ -21,6 +21,7 @@ namespace EteaProject11032020
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Доска
             int a = 1;
             int b = a++;
             int c = ++a;
@@ -28,6 +29,7 @@ namespace EteaProject11032020
             this.listBox1.Items.Add($"Values: a={a}, b={b}, c={c}, d={d}");
             this.listBox1.Items.Add(string.Empty);
 
+            //Телеграм
             Temp temp = new Temp("1", 0, "Один");
             temp.Count += 10;
             //

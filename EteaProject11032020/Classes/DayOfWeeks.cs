@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FProjectEtea1.Classes
+﻿
+namespace ITEAProject11032020.Classes
 {
     /// <summary>
     /// Дни недели
     /// </summary>
-    public enum DayOfWeeksRussian
+    public enum DaysOfWeekRussian
     {
         Monday = 1,
         Tuesday = 2,
