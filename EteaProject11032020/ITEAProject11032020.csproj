@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C42F1508-407B-400D-A548-A9146B9E2D31}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>EteaProject11032020</RootNamespace>
-    <AssemblyName>EteaProject11032020</AssemblyName>
+    <RootNamespace>ITEAProject11032020</RootNamespace>
+    <AssemblyName>ITEAProject11032020</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\DayOfWeeks.cs" />
+    <Compile Include="Classes\DaysOfWeekRussian.cs" />
     <Compile Include="Classes\Extensions.cs" />
     <Compile Include="Classes\MyException.cs" />
     <Compile Include="Classes\Temp.cs" />
@@ -70,6 +70,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
