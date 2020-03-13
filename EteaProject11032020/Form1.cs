@@ -47,11 +47,11 @@ namespace ITEAProject11032020
             this.listBox1.Items.Add(string.Empty);
             //
             ((ITemp)temp).GetValues();
-            this.listBox1.Items.Add($"Interface Method Result= {temp.Count}");
+            this.listBox1.Items.Add($"1 Interface Method Result= {temp.Count}");
             this.listBox1.Items.Add(string.Empty);
             //
-            temp.GetValues();
-            this.listBox1.Items.Add($"Class Method Result = {temp.Count}");
+            ((ITemp2)temp).GetValues();
+            this.listBox1.Items.Add($"2 Interface Method Result = {temp.Count}");
             this.listBox1.Items.Add(string.Empty);
             //
             try

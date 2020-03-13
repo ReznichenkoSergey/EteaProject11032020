@@ -6,7 +6,7 @@ namespace ITEAProject11032020.Classes
     /// <summary>
     /// Запретить наследование
     /// </summary>
-    public sealed class Temp: Temp2, ITemp
+    public sealed class Temp: Temp2, ITemp, ITemp2
     {
         /// <summary>
         /// Свойство 1
@@ -82,7 +82,7 @@ namespace ITEAProject11032020.Classes
             return $"Создано объектов {StatVar}";
         }
 
-        #region Реализация метода
+        #region Реализация интерфейсов
 
         bool isactive;
         public bool IsActive
@@ -91,14 +91,14 @@ namespace ITEAProject11032020.Classes
             set { this.isactive = value; }
         }
 
-        public void GetValues()
+        void ITemp.GetValues()
         {
             this.Count = 100;
         }
 
-        void ITemp.GetValues()
+        void ITemp2.GetValues()
         {
-            this.Count = 50;
+            this.Count = 150;
         }
 
         #endregion
